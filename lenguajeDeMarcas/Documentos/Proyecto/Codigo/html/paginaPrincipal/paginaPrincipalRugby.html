@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Pagina principal</title>
+    <link rel="stylesheet" href="../../css/paginaPrincipal/paginaPrincipalRugby.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Asegura que el tamaño se ajuste a la pantalla-->
+    <meta charset="UTF-8"> <!--Este meta es para pode poner caracteres especiales como la ñ-->
+</head>
+<body>
+    <header>
+        <h1 class="titulo">TOTRUGBY</h1>
+    </header>
+    <nav class="navPrincipal">
+      <div id="desplegables">
+        <input type="checkbox" id="mostrar_trabajos">
+      <label for="mostrar_trabajos">Trabajos</label>
+      <div id="trabajos">
+          <div class="trabajos">
+              <a href="../../html/curriculum/CurriculoFafdeKlerk.html"><input type="button" value="Curriculum" class="boton"></a>
+              <a href="../../html/escala/escalaPartido.html"><input type="button" value="Escala" class="boton"></a>
+              <a href="../../html/frase/FrasesRugby.html"><input type="button" value="Frases" class="boton"></a>
+              <a href="../../html/dialogo/dialogoEntrevista.html"><input type="button" value="Diálogo" class="boton"></a>
+              <a href="../../html/comparativa/comparativaEquipos.html"><input type="button" value="Comparativa" class="boton"></a>
+              <a href="../../html/resena/resenaRugby.html"><input type="button" value="Reseñas" class="boton"></a>
+              <a href="../../html/tarjeta/tarjetaLlorcaMartinezJuanvi.html"><input type="button" value="Tarjeta" class="boton"></a>
+              <a href="../../html/samvalentin/samValentinJuanviLlorca.html"><input type="button" value="San Valentin" class="boton"></a> 
+              <a href="../../html/calendario/calendarioJuanviLlorca.html"><input type="button" value="Calendario" class="boton"></a> 
+          </div>
+      </div>
+      <input type="checkbox" id="mostrar_juegos">
+      <label for="mostrar_juegos">Juegos</label>
+      <div id="juegos">
+          <div class="juegos">
+              <a href="../../html/juego/videojuegoRugby.html"><input type="button" value="RugbyTackle" class="boton"></a>  
+              <a href="../../html/dados/juegoDadosJuanvi.html"><input type="button" value="Dados" class="boton"></a> 
+          </div>
+      </div>
+      </div>
+      <div class="redes">
+        <a href="https://www.facebook.com/?locale=es_ES" target="_blank"> <!--El target blank hace que te abra una nueva pestaña-->
+            <img class="facebook"src="../../img/paginaPrincipal/paginaPrincipalJuanvi/facebook.png">
+        </a>
+        <a href="https://www.instagram.com" target="_blank"> <!--El target blank hace que te abra una nueva pestaña-->
+            <img class="instagram"src="../../img/paginaPrincipal/paginaPrincipalJuanvi/instagram.png">
+        </a>
+        <a href="https://www.twitter.com/?lang=es" target="_blank"> <!--El target blank hace que te abra una nueva pestaña-->
+            <img class="twitter"src="../../img/paginaPrincipal/paginaPrincipalJuanvi/twitter.png">            
+        </a> 
+    </div>
+    </nav>
+   
+    <div class="imagenes">
+          <figure class="imagen">
+            <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/imagenesCarro/Juanvi LLorca.jpg">
+          </figure>
+
+          <figure class="imagen">
+            <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/imagenesCarro/fondoWeb.jpg">
+          </figure>
+
+          <figure class="imagen">
+            <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/imagenesCarro/jonahLomu.jpg">
+          </figure>
+
+          <figure class="imagen">
+            <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/imagenesCarro/faf.jpg">
+          </figure>
+
+          <figure class="imagen">
+            <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/imagenesCarro/haka.jpg">
+          </figure>
+
+          <figure class="imagen">
+            <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/imagenesCarro/jv2.jpeg">
+          </figure>
+        <button class="flechaIzq" onclick="pasarImagen(-1)">&#10094;</button>
+        <button class="flechaDer" onclick="pasarImagen(1)">&#10095;</button>
+    </div>
+
+    <div class ="cuerpoPagina">
+        <aside class = "columnaIzq">
+          <a href="https://www.rugbytienda.es/index.php?id_lang=1" id="anuncio">
+            <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/anuncioTiendaOnline.jpg">
+          </a>
+          <iframe src="https://www.youtube.com/embed/iPDopBDQI1g" class="videoYoutube"></iframe>
+          <div id="pagRecomendadas">PÁGINAS RECOMENDADAS
+            <div class="pag">
+              <a href="../../html/resena/resenaRugby.html">RESEÑAS</a>
+            </div>
+            <div class="pag">
+              <a href="../../html/comparativa/comparativaEquipos.html">COMPARATIVA</a>
+            </div>
+            <div class="pag">
+              <a href="../../html/escala/escalaPartido.html">ESCALA</a>
+            </div>
+          </div>
+          <div id="pagVisitadas">PÁGINAS MÁS VISITADAS
+            <div class="pag">
+              <a href="../../html/juego/videojuegoRugby.html">RUGBYTACKLE</a>
+            </div>
+            <div class="pag">
+              <a href="../../html/dialogo/dialogoEntrevista.html">DIALOGO</a>
+            </div>
+            <div class="pag">
+              <a href="../../html/samvalentin/samValentinJuanviLlorca.html">SAMVALENTIN</a>
+            </div>
+          </div>
+        </aside>
+
+        <aside class = "columnaDer">
+          <a href="../../html/formulario/formularioRugby.html">
+            <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/logoLogin.jpg" id ="login">
+          </a>
+          <iframe src="../../html/resena/resenaRugby.html" id="subPagina"></iframe> <!--HACER QUE SE AJUSTE A LA VENTANA DEL IFRAME-->
+          <iframe src="https://api.wo-cloud.com/content/widget/?geoObjectKey=3449786&language=es&region=ES&timeFormat=HH:mm&windUnit=kmh&systemOfMeasurement=metric&temperatureUnit=celsius" name="CW2" scrolling="no" width="300" height="192" frameborder="0" style="border: 1px solid #10658E;border-radius: 10px"></iframe>
+          <a>
+            <img src="https://counter4.optistats.ovh/private/contadorvisitasgratis.php?c=r1nh8xjubghz6gwg2yacdmfceafdlfhb" id="contVisitas" alt="contador de visitas para web">
+          </a>
+        </aside>
+
+      <main class ="contenido">
+        <article class="historiaRugby">HISTORIA DEL RUGBY
+          <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/historiaRugby.jpg">
+          <p>
+            El rugby moderno, al igual que el fútbol moderno, es una evolución directa del fútbol medieval británico, también llamado en español fútbol de carnaval (en inglés "mob football", equivalente a fútbol multitudinario),
+             un juego de pelota violento reiteradamente prohibido, de reglas sumamente variables, que se practicaba popularmente en las islas británicas durante el medievo europeo, en el que se usaban tanto las manos como los pies, 
+             así como la fuerza para detener a los competidores.
+
+            La tradición atribuye la invención del rugby a William Webb Ellis, un estudiante de teología del Colegio de Rugby9​ y el trofeo que se entrega a los ganadores de la Copa del Mundo de Rugby lleva su nombre.
+             El hecho es recordado en una lápida mural de la public school de Rugby.
+          </p>
+        </article>
+        <article class="valoresRugby">SUS VALORES
+          <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/imagenesCarro/valores-del-rugby-respeto.jpg">
+          <p>
+            El rugby, más que un deporte, es un escenario donde los valores se forjan y se ponen a prueba en cada encuentro. En su esencia, este deporte fomenta la camaradería, el respeto y el trabajo en equipo, convirtiéndose en un poderoso vehículo para el crecimiento personal y colectivo.
+
+            La lealtad es uno de los pilares fundamentales del rugby. Los jugadores confían unos en otros y se apoyan mutuamente en cada movimiento, sabiendo que juntos son más fuertes. Esta lealtad trasciende las líneas del campo y se extiende a la comunidad rugbística en su conjunto, donde se celebra la unión y la solidaridad entre equipos y jugadores.
+
+            El respeto es otro valor fundamental. En el rugby, se respeta al rival, al árbitro y a las reglas del juego. Se reconoce la diversidad de habilidades y se valora la contribución de cada individuo al equipo. Este respeto se manifiesta tanto en la victoria como en la derrota, donde se aplaude el esfuerzo y se aprende de los errores.
+
+            La disciplina es un componente esencial en la práctica del rugby. Los jugadores se esfuerzan por mantener la compostura incluso en los momentos más desafiantes, demostrando control emocional y mental. La disciplina se refleja en el cumplimiento de las reglas y en el compromiso con el entrenamiento y la mejora continua.
+
+            La humildad también ocupa un lugar destacado en el rugby. Los jugadores comprenden que el éxito es efímero y que siempre hay margen para aprender y crecer. Se valoran los logros colectivos por encima de los individuales, y se reconoce la contribución de todos los miembros del equipo, desde el capitán hasta el jugador más novato.
+
+            En resumen, el rugby no solo es un deporte, sino una escuela de valores donde se cultivan la lealtad, el respeto, la disciplina y la humildad. Estos valores no solo se aplican dentro del campo de juego, sino que también se extienden a la vida cotidiana, ayudando a formar individuos íntegros y comunidades fuertes.
+          </p>
+        </article>
+
+        <article class="expRugby">MI EXPERIENCIA PERSONAL
+          <img src="../../img/paginaPrincipal/paginaPrincipalJuanvi/imagenesCarro/jv6.jpg">
+          <p>
+            Llevo jugando a este deporte desde 2012 y puedo decir que en gran medida la clase de persona que soy hoy en día se debe a los valores y enseñanzas de entrenadores, 
+            capitanes y varios compañeros que he ido conociendo a 
+            lo largo de los años. Los valores que te inculcan desde que decides entrar en este mundo no solo se quedan en el momento de jugar o entrenar, 
+            sino que los llevas contigo en tu día a día, en el trabajo, la familia, los estudios, 
+            y en todas las facetas de la vida. El rugby es más que un deporte; es una forma de vivir y entender el mundo.
+          </p>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+        <p>Juanvi Llorca. Contacto: juanvi486@gmail.com tlf: 685987412</p>
+    </footer>
+
+<script src="../../js/paginaPrincipal/paginaPrincipalRugby.js"></script>
+</body>
+</html>

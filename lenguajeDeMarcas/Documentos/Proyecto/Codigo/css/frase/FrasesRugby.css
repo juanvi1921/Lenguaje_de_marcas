@@ -1,0 +1,266 @@
+body {
+    background-color: lightblue;
+    font-size: 16px;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color:rgb(10, 119, 0);
+    border-style: solid;
+  } 
+
+  main {
+    text-align: center;
+    position: relative;
+    top: 330px;
+    height:820px;
+  }
+
+  .foto1 img {
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    top: 80px; 
+    left: 50px;
+  }
+
+  .foto2 img {
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    top: 80px; 
+    left: 500px;  
+  }
+
+  .foto3 img {
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    top: 80px; 
+    left: 950px;    
+  }
+
+  .foto4 img {
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    top: 80px; 
+    left: 1369px;  
+  }
+
+  h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color:rgb(10, 119, 0);
+    border-style: solid;
+  }
+
+
+  .contenedor1 {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(91, 91, 196);
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    white-space: nowrap;
+  
+  }
+  .frase1 {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    
+  }
+  .frase1::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    width: 100%;
+    height:100%;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-width: 5px;
+    
+  }
+  .frase1::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -5px;
+    width: 100%;
+    height: 100%;
+    border-left-style:  dotted;
+    border-right-style: dotted;
+    border-width: 5px;
+   
+  }
+
+  .contenedor2 {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(137, 91, 196);
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    white-space: nowrap;
+  
+  }
+  .frase2 {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .frase2::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    width: 100%;
+    height:100%;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-width: 5px;
+    
+  }
+  .frase2::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -5px;
+    width: 100%;
+    height: 100%;
+    border-left-style:  dotted;
+    border-right-style: dotted;
+    border-width: 5px;
+   
+  }
+
+  .contenedor3 {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(179, 91, 196);
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    white-space: nowrap;
+  
+  }
+  .frase3 {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .frase3::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    width: 100%;
+    height:100%;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-width: 5px;
+    
+  }
+  .frase3::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -5px;
+    width: 100%;
+    height: 100%;
+    border-left-style:  dotted;
+    border-right-style: dotted;
+    border-width: 5px;
+   
+  }
+
+  .contenedor4 {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(196, 91, 179);
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    white-space: nowrap;
+  
+  }
+  .frase4 {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .frase4::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    width: 100%;
+    height:100%;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-width: 5px;
+    
+  }
+  .frase4::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -5px;
+    width: 100%;
+    height: 100%;
+    border-left-style:  dotted;
+    border-right-style: dotted;
+    border-width: 5px;
+   
+  }
+
+
+
+  footer {
+    font-family: verdana;
+    font-size: 15px;
+    background-color:rgb(209, 209, 209);
+    position: relative;
+    text-align: center;
+  }
+
+
+
+
+  

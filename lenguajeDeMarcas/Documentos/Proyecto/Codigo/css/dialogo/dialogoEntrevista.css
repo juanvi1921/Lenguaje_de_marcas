@@ -1,0 +1,134 @@
+@import url(../../font/fuentes/PirataOne-Regular.ttf);
+@import url(../../font/fuentes/GABRWFFR.TTF);
+@font-face {
+    font-family: "fuente1";
+    src: url(../../font/fuentes/GABRWFFR.TTF);
+}
+@font-face {
+    font-family: "fuente2";
+    src: url(../../font/fuentes/PirataOne-Regular.ttf);
+}
+
+h1 {
+    font-family: "Gill Sans MT";
+    color: white;
+    background-image: linear-gradient(to right, rgb(17, 17, 17),rgba(0,0,0,0));
+    padding: 5px
+}
+
+h2 {
+    font-family: "Gill Sans MT";
+    color: white;
+    background-image: linear-gradient(to right, rgb(17, 17, 17),rgba(0,0,0,0));
+    padding: 5px
+}
+
+h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+body {
+    background-image: url(../../img/dialogo/dialogoRugby/fondoWeb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor1 {
+    width: 100%;
+    float: left;
+}
+
+.contenedor2 {
+    width: 100%;
+    float: right;
+}
+
+.antoine img {
+    background-color: transparent;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    float: right;
+    border: solid 2px;
+    border-color: black;
+    
+}
+
+.entrevistador img {
+    background-color: transparent;
+    width: 120px;
+    height: 120px; 
+    border-radius: 15px;
+    float: left;
+    border: solid 2px;
+    border-color: black;
+  
+}
+
+.entrevistador {
+    font-family: fuente1;
+    background-color: transparent;
+    float: left;
+    width: 50%;
+    margin-left: 3%;
+}
+
+.antoine {
+    font-family: fuente2;
+    font-size: 22px;
+    background-color: transparent;
+    float: right;
+    width: 50%;
+    margin-right: 3%;
+}
+
+.bocadillo1 {
+    background-color: azure;
+    border: solid 2px;
+    border-color: black;
+    margin-left: 22px;
+    padding: 10px;
+    border-radius: 5px 15px 5px 15px;
+    margin-left: 200px;
+}
+
+.entrevistador::before {
+    background-color: azure;
+    float: inline-end;
+    content: "";
+    border-style: solid solid hidden solid;
+    border-width: 2px;
+    border-color:black;
+    width: 81%;
+    height: 20px;
+    border-radius: 100px 0px 0px 0px;  
+}
+
+.bocadillo2 {
+    background-color: azure;
+    border: solid 2px;
+    border-color: black;
+    margin-right: 180px;
+    padding: 10px;
+    border-radius: 5px 15px 5px 15px;
+    margin-bottom: 5px;
+}
+
+.antoine::before {
+    right: 221px;
+    background-color: azure;
+    float: inline-start;
+    content: "";
+    border-style: solid solid hidden solid;
+    border-width: 2px;
+    border-color: black;
+    width: 83%;
+    height: 20px;
+    border-radius: 0px 100px 0px 0px;
+}
+
+
+
+

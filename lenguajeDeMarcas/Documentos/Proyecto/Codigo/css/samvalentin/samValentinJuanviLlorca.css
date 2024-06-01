@@ -1,0 +1,54 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    margin: 20px;
+    background-image: url(../../img/samvalentin/samValentinJuanviLlorca/fondoRugby.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 600%;
+    font-style: italic;
+    margin: 2px;
+    border-radius: 15px;
+    color: aliceblue;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) ,transparent);
+}
+
+.contenedor {
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+}
+
+img {
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    border: solid black;
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
+}
+
+.mensaje {
+    font-weight: bold;   /* Hace que el texto sea en negrita */
+    font-style: italic;  /* Hace que el texto sea en cursiva */
+    color: #333;         /* Cambia el color del texto (puedes ajustar el valor) */
+    /* Agrega otros estilos según tus preferencias */
+}
+
+footer {
+    margin: auto;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 70%;
+}

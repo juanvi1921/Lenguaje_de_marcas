@@ -1,0 +1,352 @@
+body { /*Estilo general de la pagina*/
+    display: grid;
+    margin: 20px;
+    background-image: url(../../img/paginaPrincipal/paginaPrincipalJuanvi/new96.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo { /*Estilo del titulo de la pagina*/
+    font-family: Impact, sans-serif;
+    margin: 2px;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 8px;
+    color: aliceblue;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) ,transparent); /*Fondo del titulo difuminado de forma gradiente*/
+}
+
+.boton {
+    font-family: 'Arial Black', Arial, sans-serif;
+    width: 110px;
+    background-color: rgb(0, 0, 0, 0.9);
+    margin: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 8px;
+    color: aliceblue;
+    cursor: pointer
+}
+
+/*Desplegable de los trabajos*/
+#trabajos {
+    display: none; /*Por defecto mantenemos los trabajos ocultos*/
+    z-index: 1; /*Le ponemos z-index 1 porque asi cuando la  pagina se hace pequeña sigue funcionando los  botones.(Deja de funcionar el boton de pasar imagenes que es menos importante. */
+}
+
+#mostrar_trabajos:checked + label + #trabajos { /*Desplega las opciones al darle a Trabajos*/
+    display: block;
+    position: absolute;
+    margin-top: 7px;
+}
+
+#mostrar_trabajos { /*Oculta el cuadrado que marca el checkbox*/
+    display: none;
+}
+
+/*Desplegable de los juegos*/
+#juegos {
+    display: none; /*Por defecto mantenemos los trabajos ocultos*/
+    z-index: 1; /*Le ponemos z-index 1 porque asi cuando la  pagina se hace pequeña sigue funcionando los  botones.(Deja de funcionar el boton de pasar imagenes que es menos importante. */
+}
+
+#mostrar_juegos:checked + label + #juegos { /*Desplega las opciones al darle a Juegos*/
+    display: block;
+    position: absolute;
+    margin-left: 119px;
+    margin-top: 7px;
+}
+
+#mostrar_juegos { /*Oculta el cuadrado que marca el checkbox*/
+    display: none;
+}
+
+label {
+    font-family: 'Arial Black', Arial, sans-serif;
+    width: 110px;
+    background-color: rgb(0, 0, 0, 0.9);
+    margin: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 17px;
+    padding-right: 17px;
+    color: aliceblue;
+    cursor: pointer
+}
+
+/*Estilo del nav*/
+.trabajos, .juegos {
+    position: absolute;
+    display: grid;
+}
+
+#desplegables {
+    margin: 20px;
+}
+
+.navPrincipal {
+    margin-top: 40px;
+    display: flex;
+    position: fixed;
+    width: 95vW;
+    justify-content: space-between;
+}
+
+.redes {
+    margin-top: 20px;
+    display: flex;
+}
+
+.facebook {
+    width: 27px;
+    height: 27px;
+    padding-right: 2px;
+    padding-top: 1px;
+}
+
+.instagram {
+    width: 30px;
+    height: 30px;
+}
+
+.twitter {
+    width: 30px;
+    height: 30px;
+}
+
+/*Estilo del carro de imagenes*/
+
+.imagenes img {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.imagenes {
+    width:800px;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    align-content: center;
+    z-index: 0;
+}
+
+.flechaIzq, .flechaDer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: -50px;
+}
+
+.flechaDer {
+    right: 50px;
+}
+
+.cuerpoPagina {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Tres columnas, la primera y la tercera se ajustan al contenido, la segunda se expande */
+    grid-template-areas: "columnaIzq contenido columnaDer"; /* Especifica el orden y el nombre de los elementos*/
+    height: 50vh; /*Ajustar lo que quiera que ocupe la pantalla*/
+}
+
+.columnaIzq {
+    grid-area: columnaIzq; /*Ubica los elementos donde toca*/
+    display: grid;
+    justify-content: start;
+}
+
+.columnaIzq img {
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+#anuncio {
+    margin: 20px;
+    width: 100px;
+    height: 100px;   
+}
+
+.videoYoutube {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#subPagina {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.contenido {
+    grid-area: contenido; 
+}
+
+.columnaDer {
+    grid-area: columnaDer; 
+    display: grid;
+    justify-content: end;
+}  
+
+#contVisitas {
+    width: 80px;
+    height: 30px;
+    margin: 20px;
+    position: relative;
+    float: right;
+    bottom: 8px;
+}
+
+#login {
+    width: 170px;
+    height: 70px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.contenido {
+    margin-left: 80px;
+    margin-right: 80px;
+    display: grid;
+    justify-content: space-between;
+}
+
+.valoresRugby {
+    width: 400px;
+    height: 730px;
+    background-color: #f9f9f9; 
+    padding: 20px;  
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.valoresRugby img {
+    width: 200px;
+    height: 200px;
+    display: block; /* Evitar espacio adicional debajo de la imagen */
+    margin-right: 10px;
+    float: left;
+    border-radius: 10px;
+}
+
+.historiaRugby { 
+    width: 500px;
+    height: 370px;
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+.historiaRugby img {
+    width: 250px;
+    height: 250px;
+    display: block; /* Evitar espacio adicional debajo de la imagen */
+    margin: 15px; /* Espacio inferior de la imagen */
+    float: left;
+    border-radius: 10px;
+}
+
+.expRugby { 
+    width: 500px;
+    height: 280px;
+    background-color: #f9f9f9; 
+    margin-top: 10px;
+    padding: 20px;   
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    grid-column: 1 / span 1;
+    grid-row: 2;
+}
+
+.expRugby img {
+    width: 250px;
+    height: 200px;
+    display: block; /* Evitar espacio adicional debajo de la imagen */
+    margin: 15px; /* Espacio inferior de la imagen */
+    float: left;
+    border-radius: 10px;
+}
+
+#pagRecomendadas {
+    display: grid;
+    position: relative;
+    justify-items: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgb(0, 0, 0, 0.9);
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 8px;
+    color: aliceblue;
+}
+
+#pagVisitadas {
+    display: grid;
+    position: relative;
+    justify-items: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgb(0, 0, 0, 0.9);
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 8px;
+    color: aliceblue;
+}
+
+.pag {
+    background-color: rgb(116, 168, 18);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.pag a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    position:absolute;
+    float: left;
+    bottom: -450px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+

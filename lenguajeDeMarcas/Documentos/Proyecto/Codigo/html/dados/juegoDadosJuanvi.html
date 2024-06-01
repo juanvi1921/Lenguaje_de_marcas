@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/dados/juegoDadosJuanvi.css">
+    <title>Juego de dados</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <span id="puntuacionTotal1"></span>
+            <img src="../../img/dados/imagenes/spain.png" id="imgEquipos">
+        </h1>
+        <h1>
+            <span id="puntuacionTotal2"></span>
+            <img src="../../img/dados/imagenes/newZealand.png"id="imgEquipos">
+        </h1>    
+    </header>
+    <main>
+        <section >
+            <span>Jugador 1: </span>
+            <select id="player1">
+                <option value="1">1 dado</option>
+                <option value="2">2 dados</option>
+                <option value="3">3 dados</option>
+                <option value="4">4 dados</option>
+                <option value="5">5 dados</option>
+                <option value="6">6 dados</option>
+                <option value="7">7 dados</option>
+                <option value="8">8 dados</option>
+                <option value="9">9 dados</option>
+                <option value="10">10 dados</option>
+                <option value="11">11 dados</option>
+                <option value="12">12 dados</option>
+            </select>
+            <button type="button" id="enviar" onclick="numeroDados('player1', 'seccion1', 'puntuacion1')">Enviar</button>
+            <span id="seccion1">Puntuación:</span>
+            <span id="puntuacion1"></span>
+        </section>
+        
+        <section >
+            <span>Jugador 2: </span>
+            <select id="player2">
+                <option value="1">1 dado</option>
+                <option value="2">2 dados</option>
+                <option value="3">3 dados</option>
+                <option value="4">4 dados</option>
+                <option value="5">5 dados</option>
+                <option value="6">6 dados</option>
+                <option value="7">7 dados</option>
+                <option value="8">8 dados</option>
+                <option value="9">9 dados</option>
+                <option value="10">10 dados</option>
+                <option value="11">11 dados</option>
+                <option value="12">12 dados</option>
+            </select>
+            <button type="button" id="enviar" onclick="numeroDados('player2', 'seccion2', 'puntuacion2')">Enviar</button>
+            <span id="seccion2">Puntuación:</span>
+            <span id="puntuacion2"></span>
+        </section>
+
+        <button type="button" id="obtenerGanador" onclick="obtenerGanador()">Obtener Ganador</button>
+        <span id="resultadoTirada"></span>
+    </main>
+    <footer>
+        <p>Trabajo realizado por Juanvi Llorca</p>
+    </footer>
+</body>
+<script src="../../js/dados/juegoDadosJuanvi.js"></script>
+</html>

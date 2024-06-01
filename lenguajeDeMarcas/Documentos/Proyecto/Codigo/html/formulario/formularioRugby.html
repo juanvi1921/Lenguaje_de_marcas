@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparativa entre dos equipos</title>
+    <link rel="stylesheet" href="../../css/formulario/formularioRugby.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>TOTRUGBY</h1>
+    </header>
+<div class="contenedor">
+    <form action="">
+        <ul>
+            <li>
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="user_name" pattern="[A-Za-záéíóúüñÁÉÍÓÚÜÑ ]+" placeholder="Nombre" required/>
+            </li>
+            <li>
+                <label for="apellido"></label>
+                <input type="text" id="apellido" name="user_apellido" pattern="[A-Za-záéíóúüñÁÉÍÓÚÜÑ ]+" placeholder="Primer Apellido" required/>
+            </li>
+            <li>
+                <label for="apellido2"></label>
+                <input type="text" id="apellido2" name="user_apellido2" pattern="[A-Za-záéíóúüñÁÉÍÓÚÜÑ ]+" placeholder="Segundo apellido"/>
+            </li>
+            <li>
+                <label for="telefono"></label>
+                <input type="tel" id="telefono" name="user_telefono" pattern="[0-9]{9}" placeholder="Teléfono" required/> 
+            </li>
+            <li>
+                <label for="mail"></label>
+                <input type="email" id="mail" name="user_mail" placeholder="Correo electrónico" required/>
+            </li>
+            <li>
+                <label for="date"></label>
+                <input type="date" id="date" name="user_date" required/>
+            </li>
+            <li>
+                <label for="direccion"></label>
+                <input type="text" id="direccion" name="user_direccion" placeholder="Dirección" required/>
+            </li>
+            <li>
+                <label for="codigoPostal"></label>
+                <input type="text"  id="codigoPostal" name="user_codigoPostal" pattern="[0-9]{5}" placeholder="Código postal" required/> 
+            </li>
+            <p>
+                <h4>Método de pago:</h4>
+                <input type="radio" name="pago" required/><span>Visa</span>
+                <input type="radio" name="pago"/><span>MasterCard</span>
+                <input type="radio" name="pago"/><span>PayPal</span>
+            </p>
+            <p>
+            <input type="checkbox" name="cookies" required/><span>Acepto el uso de cookies.</span><br>
+            <input type="checkbox" name="politica" required/><span>Acepto la política de privacidad.</span>
+            </p>
+            <p>
+                <input type="reset" value="Reiniciar el formulario">
+                <input type="submit" value="Registrarse">
+            </p>
+
+        </ul>
+    </form>
+</div>
+
+<footer>
+    <p>Trabajo realizado por Juanvi Llorca.</p>
+</footer>
+
+</body>
+</html>

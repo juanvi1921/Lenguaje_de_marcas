@@ -1,0 +1,163 @@
+/* Importamos la fuente de google*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo { /*Estilo del titulo de la pagina*/
+    position: absolute; /* Se posiciona absolutamente en relación con el viewport */
+    top: 10; /* Se alinea en la parte superior del viewport */
+    left: 10; /* Se alinea a la izquierda del viewport */
+    font-family: Impact, sans-serif;
+    margin: 2px;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 8px;
+    color: aliceblue;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) ,transparent); /*Fondo del titulo difuminado de forma gradiente*/
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: violet;
+    background-image: url(../../img/calendario/calendarioRugby/fondoRugby.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    width: 450px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.contenedor header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+header .fechaActual {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+header .iconos span {
+    height: 38px;
+    width: 38px;
+    max-width: 0 1px;
+    font-size: 1.9rem;
+    margin: 0 1px;
+    color: #878787;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    
+}
+
+header .iconos span:hover { /*Esto hace que al pasar el raton por encima ponga este color */
+    background-color: #ecdede;
+}
+
+header .iconos span:last-child { /*coge el ultimo span y le añade un margen negativo de -10*/
+    margin-right: -10px;
+}
+
+.calendario {
+    padding: 20px;
+}
+
+.calendario ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calendario .dias {
+    margin-bottom: 20px;
+}
+
+.calendario .dias li {
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.calendario .semanas li { /*Negrita de los dias de la semana*/
+   font-weight: 500; 
+}
+
+.calendario ul li {  /*Separa los numeros y la fecha en 7 partes iguales*/
+    position: relative;
+    width: calc(100% / 7);
+}
+
+.dias li.inactivo {
+    color: #aaa;
+}
+
+.dias li.activo {
+    color: #fff;
+}
+
+.calendario .dias li::before {
+   position: absolute;
+   content: "";
+   height: 40px;
+   width: 40px;
+   top: 50%;
+   left: 50%;
+   z-index: -1;
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.dias li:hover::before {
+    background: #ecdede;
+}
+
+.dias li.activo::before {
+    background: #009eb3;
+}
+
+/* Estilo para los eventos */
+.evento { 
+    position: relative; /* Añadido */
+}
+
+.evento::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(199, 56, 255);
+    border-radius: 50%; /* Asegura que el fondo morado sea redondo */
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+}
+
+.evento:hover::before {
+    background: rgb(199, 56, 255) !important;
+}
+
+footer {
+    position:absolute;
+    bottom: 0px;
+    font-weight: bold;
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}

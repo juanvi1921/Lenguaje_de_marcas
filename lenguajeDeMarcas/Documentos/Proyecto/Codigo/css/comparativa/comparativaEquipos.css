@@ -1,0 +1,114 @@
+
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    margin: 20px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    font-family: sans-serif;
+    font-weight: bold;
+} 
+
+.contenedor {
+    display: flex; 
+    flex-direction: row;
+    justify-content:space-between;
+    overflow: auto;
+}
+
+.comparativaEquiposimg {
+    width: 100%;
+    height: 450px;
+}
+
+.nuevaZelanda {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    width: 200px;
+}
+
+.sudAfrica {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 220px; 
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;  
+}
+
+.sAtaque, .sDefensa, .sPatada, .sScrum, .sTouch {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black; 
+    height: 15px;
+    margin: 15px;
+}
+
+.sAtaque {
+    margin-top: 35px;
+    padding-left: 730px;
+    padding-right: 730px;
+    background: linear-gradient(to right, rgb(12, 7, 17) 60%, rgb(3, 116, 101) 0%);
+}
+
+.sDefensa { 
+    margin-top: 30px;  
+    padding-left: 720px;
+    padding-right: 725px;
+    background: linear-gradient(to right, rgb(12, 7, 17) 48%, rgb(3, 116, 101) 0%);
+}
+
+.sPatada{ 
+    margin-top: 30px; 
+    padding-left: 731px;
+    padding-right: 731px;
+    background: linear-gradient(to right, rgb(12, 7, 17) 55%, rgb(3, 116, 101) 0%);
+}
+
+.sScrum {
+    margin-top: 30px;
+    padding-left: 733px;
+    padding-right: 733px;
+    background: linear-gradient(to right, rgb(12, 7, 17) 45%, rgb(3, 116, 101) 0%);
+}
+
+.sTouch{ 
+    margin-top: 30px; 
+    margin-bottom: 20px;
+    padding-left: 734px;
+    padding-right: 734px;
+    background: linear-gradient(to right, rgb(12, 7, 17) 49%, rgb(3, 116, 101) 0%);
+}
+
+.ataque, .defensa, .patada, .scrum, .touch {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    border-color: black;
+}
+
+.ataque2, .defensa2, .patada2, .scrum2, .touch2 {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    border-color: black;
+}

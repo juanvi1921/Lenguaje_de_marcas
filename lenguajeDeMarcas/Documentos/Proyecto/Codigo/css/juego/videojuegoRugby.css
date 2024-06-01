@@ -1,0 +1,224 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(../../img/juego/videojuegoRugby/background.jpg); /*PONER AQUI FONDO DE IMAGEN */ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  left: 47.3%;
+  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+  margin: 50px;
+  padding: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  color: azure;
+  border-radius: 10px;
+  }
+
+#mensajeComienzo {
+  position: relative;
+  overflow: hidden;
+  margin: 50px;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  color: black;
+  z-index: 1000;
+}
+
+.campo {
+  position: fixed;
+  text-align: center;
+}
+
+.areaJuego {
+  width: 500px; /* Ajusta el ancho del campo */
+  height: 700px; /* Ajusta la alto del campo */
+  border: 5px solid black;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../../img/juego/videojuegoRugby/campo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y:bottom;
+}
+
+.jugador {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../img/juego/videojuegoRugby/placador.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.atacante {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../img/juego/videojuegoRugby/atacante.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+
+#tiempo {
+  position: fixed;
+  top: 0%;
+  left: 21.7%;
+  margin: 50px;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  background-color: azure;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
+}
+
+#marcador {
+  position: fixed;
+  top: 5%;
+  left: 20%;
+  margin: 50px;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  background-color: azure;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.puntuacion {
+  position: fixed;
+  left: 20%;
+  top: 10.5%;
+  margin: 50px;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  background-color: azure;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.boton { /*BOTON DE COMENZAR*/
+  position: absolute;
+  margin: 50px;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  background-color: azure;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.boton2 { /*BOTON DE REINICIAR */
+  position: relative;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  background-color: azure;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
+}
+
+#descripcionJuego { 
+  position: absolute;
+  top: 25%;
+  height:150px;
+  width:400px;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  background-color: azure;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.boton:hover {
+  transform: scale(1.05); /* Aumenta el tamaño del botón */
+  transition: all 0.3s ease; /* Agrega una transición suave */
+}
+
+.boton2:hover {
+  transform: scale(1.05); /* Aumenta el tamaño del botón */
+  transition: all 0.3s ease; /* Agrega una transición suave */
+}
+
+.arbitro {
+  width: 30px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipo1 {
+  width: 30px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipo2 {
+  width: 30px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ganador {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  background-color: green;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+#perdedor {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  background-color:red;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+
+
